@@ -1,0 +1,67 @@
+.whygrow-container {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  max-height: 100vh;
+}
+
+.overlay-1 {
+  margin-left: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 2rem;
+}
+.overlay-1 p {
+  font: normal normal 300 37px Lato;
+  color: #f0e1ce;
+}
+.overlay-1 p strong {
+  font-weight: bold !important;
+}
+.overlay-1 ul {
+  font: normal normal 300 18px Lato;
+  letter-spacing: 0px;
+  color: #f0e1ce;
+}
+.icon-list {
+  list-style: none;
+}
+.icon-color {
+  color: rgb(67, 67, 178);
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .overlay-1 p {
+    font: normal normal 300 25px Lato;
+    color: #f0e1ce;
+  }
+  .overlay-1 ul {
+    font: normal normal 300 14px Lato;
+    letter-spacing: 0px;
+    color: #f0e1ce;
+  }
+}
+
+@media (min-width: 386px) and (max-width: 767px) {
+  .overlay-1 p {
+    font: normal normal 300 15px Lato;
+    color: #f0e1ce;
+  }
+  .overlay-1 ul {
+    font: normal normal 300 8px Lato;
+    letter-spacing: 0px;
+    color: #f0e1ce;
+  }
+}
+@media (max-width: 385px) {
+}

@@ -1,0 +1,78 @@
+.navbar-component {
+  background-color: #27383a !important;
+}
+.a-nav {
+  font: normal normal 300 15px/18px Lato;
+  color: #d1d1d1;
+}
+.a-nav:active {
+  outline: none !important;
+}
+.a-nav:hover {
+  color: black;
+}
+.img-navbar {
+  max-width: 46%;
+}
+@media (min-width: 1200px) {
+  .button-nav1 {
+    width: 200px !important;
+  }
+  .button-nav2 {
+    width: 200px !important;
+  }
+}
+@media (min-width: 992px) {
+  .nav-container {
+    height: 110px;
+  }
+  .boton-contacto {
+    margin-right: 2rem;
+  }
+  .nav-full {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .button-nav1 {
+    background: #f0e1ce;
+    opacity: 1;
+    width: 150px;
+    border-radius: inherit;
+  }
+  .button-nav2 {
+    width: 150px;
+    background: #293436;
+    border-radius: inherit;
+  }
+}
+
+@media (max-width: 992px) {
+  .img-navbar {
+    max-width: 25%;
+  }
+  .nav-container a {
+    justify-content: center;
+    margin: 0px;
+  }
+  .collapse-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .button-nav1 {
+    background: #f0e1ce;
+    opacity: 1;
+    border-radius: inherit;
+  }
+  .button-nav2 {
+    background: #293436;
+    border-radius: inherit;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 390px) {
+}
+@media (max-width: 390px) {
+}

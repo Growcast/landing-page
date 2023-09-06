@@ -1,0 +1,20 @@
+.video-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #232e30;
+  flex-direction: column;
+}
+.text-video {
+  font: normal normal bold 40px Lato;
+  color: wheat;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.video-box {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
