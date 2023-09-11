@@ -43,8 +43,22 @@
   -webkit-backdrop-filter: blur(8px);
   font: normal normal 300 30px Lato;
 }
+@media (min-width: 1980px) {
+  .image-plataforma {
+    display: block;
+  }
+  .imagen-plat {
+    width: 100%;
+  }
+  .p-plataforma {
+    font: normal normal 300 35px Lato;
+  }
+  .text-overlay {
+    font: normal normal 300 45px Lato;
+  }
+}
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1980px) {
   .p-plataforma {
     font: normal normal 300 18px Lato;
   }
@@ -80,5 +94,14 @@
     font: normal normal 300 14px Lato;
   }
 }
-@media (max-width: 385px) {
+@media (max-width: 386px) {
+  .p-plataforma {
+    font: normal normal 300 10px Lato;
+  }
+  .p-plataforma div p {
+    margin-bottom: 6px;
+  }
+  .text-overlay {
+    font: normal normal 300 14px Lato;
+  }
 }

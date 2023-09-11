@@ -3,6 +3,16 @@
   overflow: hidden;
   max-height: 100vh;
 }
+/* .image-contacto {
+  background-image: url("../assets/cultivation.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 .box-container1 {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
@@ -35,7 +45,23 @@
   background-color: black;
   color: #f0e1ce;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1980px) {
+  .img-plant {
+    width: 100%;
+  }
+  .optimiza {
+    font: normal normal 300 75px Lato;
+    margin-bottom: revert;
+  }
+  .p-contacto {
+    font: normal normal bold 35px Lato;
+  }
+  .button-contacto {
+    font: normal normal bold 20px Lato;
+    padding: 12px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1980px) {
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
 }
@@ -55,5 +81,16 @@
     padding: 12px;
   }
 }
-@media (max-width: 385px) {
+@media (max-width: 386px) {
+  .optimiza {
+    font: normal normal 300 20px Lato;
+    margin-bottom: revert;
+  }
+  .p-contacto {
+    font: normal normal bold 8px Lato;
+  }
+  .button-contacto {
+    font: normal normal bold 6px Lato;
+    padding: 12px;
+  }
 }

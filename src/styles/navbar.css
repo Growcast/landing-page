@@ -12,14 +12,26 @@
   color: black;
 }
 .img-navbar {
-  max-width: 46%;
+  max-width: 40%;
+  max-height: 30%;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1980px) {
+  .max-height {
+    max-height: 120px;
+  }
+  .img-navbar {
+    max-width: 14%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1980px) {
   .button-nav1 {
     width: 200px !important;
   }
   .button-nav2 {
     width: 200px !important;
+  }
+  .nav-container {
+    max-height: 120px;
   }
 }
 @media (min-width: 992px) {
@@ -47,9 +59,6 @@
 }
 
 @media (max-width: 992px) {
-  .img-navbar {
-    max-width: 25%;
-  }
   .nav-container a {
     justify-content: center;
     margin: 0px;
@@ -68,11 +77,37 @@
     border-radius: inherit;
   }
 }
-@media (min-width: 768px) {
+
+@media (min-width: 1024px) and (max-width: 1199px) {
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  .img-navbar {
+    max-width: 35%;
+  }
+  .navbar-toggler-icon {
+    font-size: 12px;
+  }
+  .navbar-toggler {
+    background-color: wheat;
+    font-size: 12px;
+  }
 }
-@media (min-width: 390px) {
+
+@media (min-width: 386px) and (max-width: 767px) {
+  .navbar-toggler-icon {
+    font-size: 12px;
+  }
+  .navbar-toggler {
+    background-color: wheat;
+    font-size: 12px;
+  }
 }
-@media (max-width: 390px) {
+@media (max-width: 386px) {
+  .navbar-toggler-icon {
+    font-size: 12px;
+  }
+  .navbar-toggler {
+    background-color: wheat;
+    font-size: 12px;
+  }
 }

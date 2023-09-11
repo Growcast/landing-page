@@ -39,7 +39,24 @@
   gap: 1rem;
   margin-top: 2rem;
 }
-@media (min-width: 1200px) {
+
+@media (min-width: 1980px) {
+  .background-image {
+    width: 100%;
+  }
+  .overlay h3 {
+    font: normal normal bold 75px Lato;
+    padding-left: 5rem;
+  }
+  .home-social {
+    padding: 2rem;
+    gap: 2rem;
+  }
+  .home-social1 {
+    width: 50px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1980px) {
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
 }
@@ -58,5 +75,12 @@
     height: 15px;
   }
 }
-@media (max-width: 385px) {
+@media (max-width: 386px) {
+  .overlay h3 {
+    font: normal normal bold 15px Lato;
+  }
+  .home-social1 {
+    width: 15px;
+    height: 15px;
+  }
 }

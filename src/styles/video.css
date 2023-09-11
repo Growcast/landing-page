@@ -1,5 +1,4 @@
 .video-container {
-  height: 100vh;
   width: 100%;
   background-color: #232e30;
   flex-direction: column;
@@ -17,4 +16,35 @@
   align-content: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  gap: 1rem;
+  margin: 1rem;
+}
+@media (min-width: 1980px) {
+  .text-video h1 {
+    padding-top: 5rem;
+    font: normal normal bold 75px Lato;
+  }
+  .videos {
+    width: 500px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1980px) {
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media (min-width: 386px) and (max-width: 767px) {
+  .videos {
+    max-width: 120px;
+  }
+}
+@media (max-width: 386px) {
+  .videos {
+    max-width: 100px;
+  }
+  .text-video h1 {
+    font-size: 1.1rem;
+  }
 }
