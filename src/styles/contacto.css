@@ -1,59 +1,71 @@
-.image-contacto {
+.contacto-container {
   position: relative;
-  overflow: hidden;
-  max-height: 100vh;
+  padding: 0;
+  height: 100vh;
 }
+.imagen-contacto {
+  overflow: hidden;
+  height: 100%;
+  filter: grayscale(0.3);
+}
+
 .box-container1 {
-  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
+  width: 80%;
+  max-width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: 1rem;
+  padding: 3rem 1rem;
 }
 .optimiza {
-  font: normal normal 300 65px Lato;
+  font-size: 2rem;
   margin-bottom: revert;
 }
 .p-contacto {
-  font: normal normal bold 18px Lato;
+  font-size: 1rem;
 }
 .button-contacto {
-  background: #f0e1ce;
-  border-radius: 0;
-  border: #f0e1ce;
-  color: black;
-  font: normal normal bold 10px Lato;
-  padding: 12px;
+  background: #b47430;
+  border: #b47430;
+  color: white;
+  padding: 0.6rem;
+  font-size: 1rem;
 }
 .button-contacto:hover {
-  background-color: black;
-  color: #f0e1ce;
+  background-color: #d0904d;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1980px) {
+  .box-container1 {
+    padding: 3rem 2rem;
+    max-width: 1024px;
+  }
+  .imagen-contacto {
+    width: 100vw !important;
+  }
+  .optimiza {
+    font-size: 3rem;
+    margin-bottom: revert;
+  }
+  .p-contacto {
+    font-size: 2rem;
+  }
+  .button-contacto {
+    font: normal normal bold 20px Aeonik-Regular;
+    padding: 12px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1980px) {
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-}
-
-@media (min-width: 386px) and (max-width: 767px) {
-  .optimiza {
-    font: normal normal 300 20px Lato;
-    margin-bottom: revert;
-  }
-  .p-contacto {
-    font: normal normal bold 8px Lato;
-  }
-  .button-contacto {
-    font: normal normal bold 6px Lato;
-    padding: 12px;
-  }
-}
-@media (max-width: 385px) {
 }

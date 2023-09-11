@@ -1,49 +1,52 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { Nav, Container } from 'react-bootstrap'
+import {
+  BsFacebook as Facebook,
+  BsTwitter as Twitter,
+  BsInstagram as Instagram,
+  BsLinkedin as In
+} from 'react-icons/bs'
 import '../styles/footer.css'
-import Facebook from '../assets/Image8.png'
-import Instagram from '../assets/Image9.png'
-import Twitter from '../assets/Image11.png'
-import In from '../assets/Image10.png'
-import imagenLogo from '../assets/Growcast-SVG.svg'
-import { Image } from 'react-bootstrap'
-
+import { FaCopyright as CopyrightIcon } from 'react-icons/fa6'
 export const Footer = () => {
+  const currentYear = new Date().getFullYear()
+
   return (
-    <Container fluid className='p-0 footer-component'>
+    <Container fluid className='footer-component'>
       <Nav
-        className='justify-content-center w-100 nav-footer'
+        className='justify-content-center w-100 nav-footer my-3'
         activeKey='/home'
       >
-        <Nav.Item>
-          <Nav.Link href='/home' className='text-center'>
-            <Image src={imagenLogo} alt='Logo' className='img-footer' />
-          </Nav.Link>
+        <Nav.Item className='copyright d-none d-sm-flex'>
+          Growcast
+          <CopyrightIcon />
+          {currentYear}
         </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey='link-1'>NOSOTROS</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey='link-2'>PLATAFORMA</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey=''>TECNOLOGIA</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey=''>CONTACTO</Nav.Link>
-        </Nav.Item>
+        <span className='mx-4  d-none d-sm-flex text-white'>|</span>
         <div className='footer-social'>
-          <a href='*'>
-            <img src={Facebook} alt='' />
+          <a
+            href='https://www.facebook.com/profile.php?id=100091000981206&mibextid=ZbWKwL'
+            rel='noopener noreferrer'
+          >
+            <Facebook />
           </a>
-          <a href='*'>
-            <img src={Instagram} alt='' />
+
+          <a
+            href='https://www.instagram.com/growcast.io/?igshid=MzRlODBiNWFlZA%3D%3D'
+            rel='noopener noreferrer'
+          >
+            <Instagram />
           </a>
-          <a href='*'>
-            <img src={Twitter} alt='' />
+          <a
+            href='https://twitter.com/Growcast_io?t=nHRK_GAXheZjdGPK7muHMg&s=08'
+            rel='noopener noreferrer'
+          >
+            <Twitter />
           </a>
-          <a href='*'>
-            <img src={In} alt='' />
+          <a
+            href='https://www.linkedin.com/company/growcast-io/'
+            rel='noopener noreferrer'
+          >
+            <In />
           </a>
         </div>
       </Nav>
