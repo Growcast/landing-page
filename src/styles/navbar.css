@@ -20,7 +20,7 @@
 
 .navbar-toggler {
   font-size: 1.5rem;
-  color: #d0904d;
+  color: #e8c9a8;
   border: none;
   border-width: 1px;
 }
@@ -28,11 +28,21 @@
 .button-nav1 {
   color: white !important;
   border-radius: 0;
-  background-color: #b47430;
+  border: none;
+  background: rgb(122, 78, 45);
+  background: linear-gradient(
+    22deg,
+    rgba(122, 78, 45, 1) 0%,
+    rgba(232, 201, 168, 1) 100%
+  );
 }
 
 .button-nav1:hover {
-  background-color: #d0904d;
+  background: linear-gradient(
+    98deg,
+    rgba(122, 78, 45, 1) 0%,
+    rgba(232, 201, 168, 1) 100%
+  );
 }
 @media (min-width: 1980px) {
   .max-height {

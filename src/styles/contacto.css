@@ -33,16 +33,28 @@
 .p-contacto {
   font-size: 1rem;
 }
+
 .button-contacto {
-  background: #b47430;
-  border: #b47430;
-  color: white;
+  color: white !important;
+  border: none;
   padding: 0.6rem;
   font-size: 1rem;
+  background: rgb(122, 78, 45);
+  background: linear-gradient(
+    22deg,
+    rgba(122, 78, 45, 1) 0%,
+    rgba(232, 201, 168, 1) 100%
+  );
 }
+
 .button-contacto:hover {
-  background-color: #d0904d;
+  background: linear-gradient(
+    98deg,
+    rgba(122, 78, 45, 1) 0%,
+    rgba(232, 201, 168, 1) 100%
+  );
 }
+
 @media (min-width: 1980px) {
   .box-container1 {
     padding: 3rem 2rem;

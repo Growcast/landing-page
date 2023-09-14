@@ -28,7 +28,7 @@
 }
 
 .borde {
-  border-bottom: 2px solid #d0904d;
+  border-bottom: 2px solid #e8c9a8;
   width: 50%;
   padding-bottom: 1rem;
 }
@@ -55,7 +55,7 @@
 }
 
 .home-social svg {
-  color: #d0904d;
+  color: #e8c9a8;
   font-size: 1.5rem;
 }
 

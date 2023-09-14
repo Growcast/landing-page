@@ -48,7 +48,7 @@ export function NavBar () {
               CONTACTO
             </Nav.Link>
             <Button
-              className='button-nav1 d-flex align-items-center justify-content-center color-white'
+              className='btn-gradient button-nav1 d-flex align-items-center justify-content-center color-white'
               variant='outline-secondary'
               href='https://web.growcast.io/dashboard/login'
             >
