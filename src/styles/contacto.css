@@ -60,7 +60,7 @@
   }
   .button-contacto {
     font: normal normal bold 20px Aeonik-Regular;
-    padding: 12px;
+    padding: 1rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1980px) {

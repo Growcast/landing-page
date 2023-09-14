@@ -6,6 +6,7 @@ import splitter from '../assets/video/Splitter.mp4'
 import '../styles/video.css'
 
 export const Video = () => {
+  // fade in-out in loop
   React.useEffect(() => {
     const components = document.querySelectorAll('.videos')
 
@@ -34,6 +35,28 @@ export const Video = () => {
     }
   }, [])
 
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const components = document.querySelectorAll('.videos')
+
+      const windowHeight = window.innerHeight
+      const windowBottom = windowHeight + window.scrollY * 0.7
+      components.forEach(component => {
+        const componentTop = component.getBoundingClientRect().top
+
+        if (windowBottom > componentTop + windowHeight) {
+          component.play()
+        }
+      })
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
     <Container fluid className='d-flex video-container'>
       <div className='text-video w-100'>
@@ -45,7 +68,7 @@ export const Video = () => {
           <p className='d-block d-sm-none mt-3'>
             <strong>Main domestico</strong>
           </p>
-          <video id='myVideo3' className='videos' muted loop autoPlay>
+          <video id='myVideo3' className='videos' muted loop>
             <source src={main} type='video/mp4' />
           </video>
         </div>
@@ -75,7 +98,7 @@ export const Video = () => {
           <p className='d-block d-sm-none mt-3'>
             <strong>Sensor THC (Temperatura, Humedad, C02)</strong>
           </p>
-          <video id='myVideo1' className='videos' muted loop autoPlay>
+          <video id='myVideo1' className='videos' muted loop>
             <source src={hub} type='video/mp4' />
           </video>
         </div>
@@ -95,7 +118,7 @@ export const Video = () => {
           <p className='d-block d-sm-none mt-3'>
             <strong>Splitter</strong>
           </p>
-          <video id='myVideo5' className='videos' muted loop autoPlay>
+          <video id='myVideo5' className='videos' muted loop>
             <source src={splitter} type='video/mp4' />
           </video>
         </div>

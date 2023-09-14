@@ -52,7 +52,7 @@ export function NavBar () {
               variant='outline-secondary'
               href='https://web.growcast.io/dashboard/login'
             >
-              Iniciar Sesion
+              Ingresar
             </Button>
           </Nav>
         </Navbar.Collapse>
