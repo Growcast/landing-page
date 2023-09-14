@@ -1,16 +1,29 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { Col, Container, Row } from 'react-bootstrap'
-import Image from 'react-bootstrap/Image'
-import imagenBack2 from '../assets/Rectangle-188.png'
+import { Col, Container, Image, Row } from 'react-bootstrap'
+import imagenPlataforma from '../assets/Rectangle 291.png'
 import '../styles/plataforma.css'
 
 export const Plataforma = () => {
   return (
-    <Container fluid className='d-flex p-0 plataforma-container'>
-      <Row className='m-0'>
-        <Col xs={12} md={6} className='d-flex'>
+    <Container
+      fluid
+      className='d-flex plataforma-container p-0'
+      id={'plataforma'}
+    >
+      <Row className='m-0 w-100 h-100 p-0'>
+        <Col xs={12} md={7} className='image-plataforma p-0'>
+          <Image
+            src={imagenPlataforma}
+            alt='Logo'
+            className='background-image'
+          />
+
+          <h5 className='text-overlay'>
+            Plataforma para el monitoreo en tiempo real de tu indoor
+          </h5>
+        </Col>
+        <Col xs={12} md={5} className='d-flex p-4 px-md-4 py-md-0 px-lg-5'>
           <div className='d-flex text-plataforma p-plataforma'>
-            <div>
+            <div className='hidden px-lg-4 py-3 py-md-0'>
               <p>
                 <strong>Resultados consistentes en cada produccion:</strong>
               </p>
@@ -20,7 +33,7 @@ export const Plataforma = () => {
                 cada etapa, cumpliendo con los estandares de calidad requeridos.
               </p>
             </div>
-            <div>
+            <div className='hidden px-lg-4 py-3 py-md-0'>
               <p>
                 <strong>Aumento de rendimiendo y productividad:</strong>
               </p>
@@ -30,7 +43,7 @@ export const Plataforma = () => {
                 consecuente impacto economico.
               </p>
             </div>
-            <div>
+            <div className='hidden px-lg-4 py-3 py-md-0'>
               <p>
                 <strong>Tiempo libre de calidad:</strong>{' '}
               </p>
@@ -41,7 +54,7 @@ export const Plataforma = () => {
                 registrar cada tarea manual que realice.
               </p>
             </div>
-            <div>
+            <div className='hidden px-lg-4 py-3 py-md-0'>
               <p>
                 <strong>Trazabilidad:</strong>
               </p>
@@ -52,14 +65,6 @@ export const Plataforma = () => {
               </p>
             </div>
           </div>
-        </Col>
-        <Col xs={12} md={6} className='image-plataforma p-0'>
-          <div className=''>
-            <Image fluid src={imagenBack2} alt='Imagen de fondo' />
-          </div>
-          <h5 className='text-overlay'>
-            Plataforma para el monitoreo en tiempo real de tu indoor
-          </h5>
         </Col>
       </Row>
     </Container>

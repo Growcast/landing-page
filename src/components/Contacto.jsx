@@ -7,21 +7,29 @@ import '../styles/contacto.css'
 
 export const Contacto = () => {
   return (
-    <Container fluid className='p-0 image-contacto'>
+    <Container fluid className='d-flex contacto-container p-0' id={'contacto'}>
       <div>
-        <Image fluid src={imagenBack4} />
+        <Image
+          fluid
+          src={imagenBack4}
+          className='background-image imagen-contacto'
+        />
       </div>
-      <div className='container-fluid box-container1'>
+      <div className='container-fluid box-container1 align-items-center text-center'>
         <h3 className='optimiza'>Optimizá tus cultivos</h3>
         <div className='p-contacto'>
           <p>
-            Growcast permite controlar los cultivos a traves de sensores que{' '}
-          </p>
-          <p>
+            Growcast permite controlar los cultivos a traves de sensores que
             procesan y reportan datos a multiples dispositivos en tiempo real.
           </p>
         </div>
-        <Button className='button-contacto'>CONECTATE CON NOSOTROS</Button>
+        <Button
+          className='button-contacto'
+          href='mailto:info@growcast.io'
+          target='_blank'
+        >
+          CONECTATE CON NOSOTROS
+        </Button>
       </div>
     </Container>
   )

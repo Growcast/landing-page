@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Aeonik-Regular';
+  src: url('./Aeonik-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aeonik-Italic';
+  src: url('./Aeonik-RegularItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Aeonik-Bold';
+  src: url('./Aeonik-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aeonik-Italic';
+  src: url('./Aeonik-BoldItalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}

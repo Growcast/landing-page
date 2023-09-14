@@ -1,24 +1,39 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Aeonik-Regular';
+  src: url('./assets/fonts/Aeonik-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Aeonik-Italic';
+  src: url('./assets/fonts/Aeonik-RegularItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
 }
- */
-/* @import url(./fuente/Lato-Bold.ttf);
-@import url(./fuente/Lato-Light.ttf);
-@import url(./fuente/Lato-Black.ttf); */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap");
+
+@font-face {
+  font-family: 'Aeonik-Bold';
+  src: url('./assets/fonts/Aeonik-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aeonik-Italic';
+  src: url('./assets/fonts/Aeonik-BoldItalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Aeonik-Regular';
   margin: 0;
   padding: 0;
+  background: #d3d5ce;
+}
+
+b,
+strong {
+  font-family: 'Aeonik-Bold';
 }
